@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+    - name: stripe
+      description: payments data copied from psp
+      database: raw
+      tables:
+        - name: payment
+          description: raw payment data
+          columns:
+            - name: id
+              description: Primary key for payments.
+              tests:
+                - unique
+                - not_null
