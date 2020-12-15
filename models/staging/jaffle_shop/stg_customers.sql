@@ -7,3 +7,4 @@ with customers as (
 
     from {{ source('jaffle_shop','customers') }} )
 
+select * from customers
